@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, Image, Dimensions } from 'react-native';
 import {Facebook} from 'expo';
+import logo from './birthdaydashlogo.png';
 
 export default class App extends React.Component {
 
@@ -20,11 +21,11 @@ export default class App extends React.Component {
   }
 
   render() {
+    const win = Dimensions.get('window');
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <Image source={logo} style={{flex: 1, alignSelf: 'stretch', width: undefined, height: undefined}} resizeMode="contain"></Image>
+
         <Button onPress={this.logIn} title="Log in with Facebook"></Button>
       </View>
     );
@@ -34,7 +35,8 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    padding: 20,
+    backgroundColor: '#274690',
     alignItems: 'center',
     justifyContent: 'center',
   },
