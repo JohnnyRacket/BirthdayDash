@@ -19,7 +19,7 @@ export default class LaunchScreen extends React.Component {
         //     'Logged in!',
         //     `Hi ${(await response.json()).name}!`,
         //   );
-          this.props.navigation.navigate('Deals');
+          this.props.navigation.navigate('Home');
         }
         else{
           Alert.alert(

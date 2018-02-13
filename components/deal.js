@@ -8,19 +8,21 @@ export default class Deal extends React.Component {
         <View
             style={{
             flexDirection: 'row',
-            height: 120,
-            padding: 10,
-            backgroundColor: '#f5f5f5',
-            borderRadius: 10,
-            margin: 5
+            height: 130,
+            backgroundColor: '#fff',
+            paddingTop: 20,
+            paddingBottom: 20,
+            borderBottomColor: '#e7e5e5',
+            borderBottomWidth: 1
+
             }}>
-            <View style={{backgroundColor: 'grey', width: 90, height: 90, alignSelf: 'center', marginLeft: 5}} />
-            <View style={{flex: 1, flexDirection: 'column', justifyContent: 'flex-start', marginLeft: 10}}>
+            <View style={{backgroundColor: 'grey', width: 90, height: 90, alignSelf: 'center'}} />
+            <View style={{flex: 1, flexDirection: 'column', justifyContent: 'flex-start', marginLeft: 20}}>
                 <Text style={{fontWeight: 'bold', fontSize: 20}}>Starbucks</Text>
                 <Text style={{fontSize: 15}}>Free grande drink with any purchase</Text>
             </View>
-            <View style={{ flexDirection: 'column', alignItems: 'center', marginRight: 5, marginLeft: 10}}>
-                <Icon size={25} name="crown" type='material-community' color='gold'/>
+            <View style={{ flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', marginLeft: 20, marginTop: -9}}>
+                <Icon size={25} name="crown" type='material-community' color='gold' />
                 <Text style={{fontSize: 10, fontWeight: 'bold'}}>FREE</Text>
             </View>
             
